@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border: 10px solid rgb(252, 45, 231);
+    flex-flow: column wrap;
+}
+.items {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: 1px solid black;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+}
