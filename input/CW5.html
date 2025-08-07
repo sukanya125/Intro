@@ -1,0 +1,163 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2>แบบฟอร์มการสมัครเรียนต่อระดับปริญญาตรี</h2>
+      <br />
+      <h4>ข้อมูลส่วนตัวของผู้สมัคร</h4>
+      <input type="radio" />
+      <label>นาย </label>
+      <input type="radio" value="นางสาว" />
+      <label>นางสาว</label>
+      <input type="radio" value="นาง" />
+      <label>นาง</label>
+      <br />
+      <label>ชื่อ</label>
+      <input type="text" />
+      <label>นามสกุล</label>
+      <input type="text" />
+      <br />
+      <label>เลขประจำตัวประชาชน (13 หลัก)</label>
+      <input type="text" maxlength="13" />
+      <br />
+      <label>วันเดือนปีเกิด</label>
+      <input type="date" />
+      <br />
+      <label>อายุ</label>
+      <input type="number" />
+      <br />
+      <input type="radio" />
+      <label>ชาย </label>
+      <input type="radio" />
+      <label>หญิง</label>
+      <input type="radio" />
+      <label>ไม่ระบุ</label>
+      <br />
+      <label>สัญชาติ</label>
+      <input type="text" />
+      <br />
+      <label>เชื้อชาติ</label>
+      <input type="text" />
+      <br />
+      <label>ศาสนา</label>
+      <input type="text" />
+      <br />
+      <label>เบอร์โทรศัพท์</label>
+      <input type="tel" />
+      <br />
+      <label>อีเมล</label>
+      <input type="email" />
+      <br />
+      <label>ที่อยู่</label>
+      <input type="textarea" />
+      <br />
+      <h4>ข้อมูลการสมัครเรียน</h4>
+      <label>วุฒิที่จบมา</label>
+      <select>
+        <option>ม.6</option>
+        <option>ปวช.</option>
+        <option>ปวส.</option>
+      </select>
+      <br />
+      <label>ชื่อสถานศึกษาที่จบ</label>
+      <input type="text" />
+      <br />
+      <label>ปีที่จบ</label>
+      <input type="number" />
+      <br />
+      <label>GPA</label>
+      <input type="number" step="0.01" />
+      <br />
+      <label>สาขาที่สมัคร</label>
+      <select>
+        <option>IT</option>
+        <option>ITI</option>
+        <option>INE</option>
+        <option>INET</option>
+      </select>
+      <br />
+      <label>เหตุผลที่เลือกสาขา</label>
+      <input type="textarea" />
+      <br />
+          <h4>ประวัติการศึกษา</h4>
+          <form>
+  <h3>ส่วนที่ 3: ประวัติการศึกษา</h3>
+
+  <table border="1" cellpadding="5">
+    <tr>
+      <th>ระดับการศึกษา</th>
+      <th>สถานศึกษา</th>
+      <th>จังหวัด</th>
+      <th>ปีที่เข้า</th>
+      <th>ปีที่จบ</th>
+      <th>วุฒิที่ได้รับ</th>
+      <th>GPA</th>
+    </tr>
+    <tr>
+      <td>ประถมศึกษา</td>
+      <td><input type="text" name="primary_school"></td>
+      <td><input type="text" name="primary_province"></td>
+      <td><input type="text" name="primary_year_in"></td>
+      <td><input type="text" name="primary_year_out"></td>
+      <td><input type="text" name="primary_degree"></td>
+      <td><input type="text" name="primary_gpa"></td>
+    </tr>
+    <tr>
+      <td>มัธยมต้น</td>
+      <td><input type="text" name="junior_school"></td>
+      <td><input type="text" name="junior_province"></td>
+      <td><input type="text" name="junior_year_in"></td>
+      <td><input type="text" name="junior_year_out"></td>
+      <td><input type="text" name="junior_degree"></td>
+      <td><input type="text" name="junior_gpa"></td>
+    </tr>
+    <tr>
+      <td>มัธยมปลาย/ปวช./ปวส.</td>
+      <td><input type="text" name="senior_school"></td>
+      <td><input type="text" name="senior_province"></td>
+      <td><input type="text" name="senior_year_in"></td>
+      <td><input type="text" name="senior_year_out"></td>
+      <td><input type="text" name="senior_degree"></td>
+      <td><input type="text" name="senior_gpa"></td>
+    </tr>
+  </table>
+
+  <br>
+  <h3>ส่วนที่ 4: เอกสารแนบ</h3>
+
+  <p>
+    แนบไฟล์สำเนาบัตรประชาชน:<br>
+    <input type="file" name="id_card">
+  </p>
+
+  <p>
+    แนบไฟล์วุฒิการศึกษา (เช่น ปพ.1):<br>
+    <input type="file" name="education_docs" multiple>
+  </p>
+
+  <br>
+  <h3>ยืนยันและส่งฟอร์ม</h3>
+
+  <p>
+    <label>
+      <input type="checkbox" name="agreement" required>
+      ข้าพเจ้ายอมรับเงื่อนไขทั้งหมดในการสมัคร
+    </label>
+  </p>
+
+  <p>
+    <input type="submit" value="ส่งฟอร์ม">
+    <input type="reset" value="ล้างข้อมูล">
+  </p>
+</form>
+
+    </form>
+  </body>
+</html>
